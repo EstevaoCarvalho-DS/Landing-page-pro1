@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1f1517;
+    /*color é a cor do texto*/
+    color: #ffff;
+}
+
+html{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+/* tag que gera o link clicavel nos elementos*/
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    /* o primeiro vetor é vertical o segundo é horizontal*/
+    padding: 1.5rem 10rem;
+    /* flex layout*/
+    display: flex;
+    /* row - horizontal*/
+    flex-direction: row;
+    /* separação dos conteudos (space-between separa os elementos, pra explicar melhor, da um espaço entre cada elemento)*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo{
+    font-family: teko;
+    font-size: 2rem;
+    font-weight: 600;
+    /* tag que transforma o texto*/ 
+    text-transform: uppercase;
+}
+
+.navUl{
+    display: flex;
+    flex-direction: row;
+    /* propriedade do flex layout, da um gap (espaço) entre os itens, separa eles*/
+    gap: 1.5rem;
+    color: #FFF2E780;
+}
+
+.navGithub{
+    color: #FFF2E7 ;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.background-hero{
+    background:#181012;
+
+}
+
+.hero{
+    
+    max-width: 1120px;
+    /* vh é altura da tela do navegador, ajuda da proporçao*/
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    /* no display flex alinha tudo no centro*/
+    align-items: center;
+    padding: 0rem;
+    margin: auto;
+    /*isso aq é um efeito bacana, escode as imagens para que elas nao saião do hero*/
+    overflow: clip;
+}
+
+.hero-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.hero-imagens-container{
+    max-width: 45%;
+    /*cria colunas*/
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+    /*padding é o espaçamento interior*/
+    padding: 0rem 2rem;
+}
+
+/* usa pra referenciar uma tag dentro de uma classe especifica*/
+.hero-imagens-container > figure > img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.destaque{
+    font-family: Epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.marrom{
+    color: #A45A49;
+}
+
+.amarelo{
+    color: #E7A80E;
+}
+
+h1{
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr{
+    border-color: #A45A49;
+}
+
+.hero-subtitulo{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.botao-container{
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate(0, -50%);
+    
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+    
+}
+
+.receitas{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-cabecalho{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.receitas-titulo{
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+
+.receitas-subtitulo{
+    color:#C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receitas-card-container{
+    padding: 0rem 10rem;
+    display: flex;
+    /* row aqui serve pra por tudo na horizontal e dps poder quebrar as colunas*/
+    flex-direction: row;
+    /* quando chegar no final vai quebra e ir para a proxima linha*/
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.receitas-card{
+    background:#2A1A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+.receitas-card-cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+
+.receitas-card-cabeçalho-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.receita-titulo{
+    color: #FFF2E7;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.receitas-avaliaçao{
+    color: #756A67;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.receitas-descriçao{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receita-autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+
+}
+
+.receita-autor > img{
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.receita-autor-nome{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+    background: #23181A;
+}
+
+.footer-copy{
+    color: #fff2e7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-autor{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
